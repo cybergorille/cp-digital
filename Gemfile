@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.17'
-gem 'locomotive_cms', '~> 2.4.1', :require => 'locomotive/engine'
+gem 'locomotive_cms', '~> 2.2.3', :require => 'locomotive/engine'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -22,6 +22,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development do
+  gem 'thin'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
